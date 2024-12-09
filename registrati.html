@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="/static/style2.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <form id="registrationForm" action="/register" method="POST">
+            <div class="login-header">
+                <header>Registrati</header>
+            </div>
+
+            <div class="dati">
+                <label for="username" class="label">Nome Utente</label>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="NomeUtente" name="username" id="username" autocomplete="off" required>
+            </div>
+
+            <div class="dati">
+                <label for="nome" class="label">Nome</label>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Nome" name="nome" id="nome" autocomplete="off" required>
+            </div>
+
+            <div class="dati">
+                <label for="cognome" class="label">Cognome</label>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Cognome" name="cognome" id="cognome" autocomplete="off" required>
+            </div>
+
+            <div class="dati">
+                <label for="password" class="label">Password</label>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" id="password" name="password"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    title="La password deve contenere almeno 8 caratteri, con una maiuscola, almeno una lettera e un numero."
+                    autocomplete="off" required>
+            </div>
+
+            <div class="dati">
+                <label for="data" class="label">Data Nascita</label>
+            </div>
+            <div class="input-box">
+                <input type="date" class="input-field" name="data" id="data" autocomplete="off" required>
+            </div>
+
+            <div class="input-submit">
+                <button type="submit" class="submit" id="submit">Registrati</button>
+            </div>
+        </form>
+    </div>
+
+    
+   
+</body>
+
+</html>

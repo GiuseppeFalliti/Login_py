@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-box">
+
+        <form  id="loginForm" action="/login" method="POST">
+
+            <div class="login-header">
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username" name="username" autocomplete="off"
+                    required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" name="password"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                    title="La password deve contenere almeno 8 caratteri, con almeno una lettera e un numero."
+                    autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Resta Conesso</label>
+                </section>
+                <section>
+                    <a href="#">Password Dimenticata</a>
+                </section>
+
+            </div>
+            <div class="input-submit">
+                <input type="submit" class="submit" id="submit" value="">
+                <label for="submit">Accedi</label>
+            </div>
+
+        </form>
+
+        <div class="sign-up-link">
+            <p>Non hai un Account? 
+                <a href="{{ url_for('register_page') }}">
+                    <input type="button" class="submitR" value="Registrati">
+                </a>
+                
+            </p> 
+        </div>
+        
+
+        </form>
+
+        
+
+
+
+    </div>
+</body>
+
+</html>
