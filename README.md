@@ -121,5 +121,3 @@ GitHub: [GiuseppeFalliti](https://github.com/GiuseppeFalliti)
 
 Questo progetto è distribuito sotto la licenza **MIT**.
 ```
-
-Se vuoi, posso aiutarti a personalizzarlo ulteriormente! 😊
